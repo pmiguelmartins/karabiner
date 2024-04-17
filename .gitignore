@@ -1,1 +1,14 @@
 node_modules
+.DS_Store
+*.lock
+# Log files
+pnpm-debug.log*
+
+# Editor directories and files
+/node_modules
+
+.DS_Store
+.vscode
+
+*.lock
+
