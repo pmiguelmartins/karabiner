@@ -57,38 +57,37 @@ const rules: KarabinerRules[] = [
   },
   ...createHyperSubLayers({
 
-    // d = Developer Apps
+    // "Developer Apps"
     d: {
       v: app("Visual Studio Code"),
       g: app("Google Chrome"),
       f: app("Fork"),
       t: app("TablePlus"),
+      c: app("Beyond Compare"),
     },
 
-    // b = "B"rowse
-    b: {
+    // Browse
+    e: {
       p: open("https://plataforma.4p2p.pt"),
-      // Quarterly "P"lan
     },
 
-    // o = "Open" applications
-    o: {
-      t: app("Warp"),
+    // a = "Open" applications
+    a: {
+      t: app("Terminal"),
       z: app("zoom.us"),
       f: app("Finder"),
-      // "W"hatsApp has been replaced by Texts
-      w: app("Texts"),
+      w: app("Texts"), // "W"hatsApp has been replaced by Texts
     },
 
-    // r = "Raycast"
+    // "Raycast"
     r: {
       p: open("raycast://extensions/raycast/raycast/confetti"),
-      h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
+      h: open("raycast://extensions/raycast/clipboard-history/clipboard-history"),
+      l: open("raycast://extensions/raycast/raycast/search-quicklinks"),
+      s: open("raycast://extensions/raycast/file-search/search-files"),
     },
 
-    // w = "Window" via rectangle.app
+    // "Window" via rectangle.app
     w: {
       y: rectangle("previous-display"),
       o: rectangle("next-display"),
@@ -100,43 +99,30 @@ const rules: KarabinerRules[] = [
       n: rectangle("almost-maximize"),
       b: rectangle("center"),
       r: rectangle("restore"),
+      up_arrow: rectangle("top-half"),
+      down_arrow: rectangle("bottom-half"),
+      left_arrow: rectangle("left-half"),
+      right_arrow: rectangle("right-half"),
     },
 
-    // s = "System"
+    // "System"
     s: {
       u: {
-        to: [
-          {
-            key_code: "volume_increment",
-          },
-        ],
+        to: [{ key_code: "volume_increment", },],
       },
       j: {
-        to: [
-          {
-            key_code: "volume_decrement",
-          },
-        ],
+        to: [{ key_code: "volume_decrement", },],
       },
       l: {
-        to: [
-          {
-            key_code: "q",
-            modifiers: ["right_control", "right_command"],
-          },
-        ],
-      },
-      p: {
-        to: [
-          {
-            key_code: "play_or_pause",
-          },
-        ],
+        to: [{
+          key_code: "q",
+          modifiers: ["right_control", "right_command"],
+        },],
       },
     },
 
-    // c = Musi*c* which isn't "m" because we want it to be on the left hand
-    c: {
+    // Musi*c* which isn't "m" because we want it to be on the left hand
+    m: {
       p: {
         to: [{ key_code: "play_or_pause" }],
       },
@@ -147,7 +133,6 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "rewind" }],
       },
     },
-
   }),
 ];
 
