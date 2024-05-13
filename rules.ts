@@ -73,7 +73,8 @@ const rules: KarabinerRules[] = [
 
     // a = "Open" applications
     a: {
-      t: app("Terminal"),
+      // t: app("Terminal"),
+      t: app("Alacritty"),
       z: app("zoom.us"),
       f: app("Finder"),
       w: app("Texts"), // "W"hatsApp has been replaced by Texts
